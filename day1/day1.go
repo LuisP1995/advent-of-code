@@ -47,14 +47,20 @@ func Problem1(dataSet map[int]interface{}) int {
 	return -1
 }
 
+func Problem2(dataSet map[int]interface{}, partialSet map[int]interface{}) {
+
+}
+
 func main() {
 	file := "numbers"
 
 	dataSet := make(map[int]interface{})
-	//partialSet := make(map[int]interface{})
+	partialSet := make(map[int]interface{})
 
 	LoadFile(file, dataSet)
+
 	code := Problem1(dataSet)
+	code2 := Problem2(dataSet, partialSet)
 
 	fmt.Println(code)
 }
